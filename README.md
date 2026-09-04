@@ -1,6 +1,17 @@
-## Lena Cardoza
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lxcadoza993/lxcadoza993/main/assets/header.svg" alt="Lena Cardoza — DevRel @ LynxFlow" width="880"/>
+</p>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lxcadoza993/lxcadoza993/main/assets/now.svg" alt="now" width="720"/>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" height="22"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" height="22"/>
+  <img src="https://img.shields.io/badge/OpenAPI-6BA539?style=flat&logo=openapiinitiative&logoColor=white" height="22"/>
+  <img src="https://img.shields.io/badge/curl-073551?style=flat&logo=curl&logoColor=white" height="22"/>
+</p>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) ![OpenAPI](https://img.shields.io/badge/OpenAPI-6BA539?style=flat&logo=openapiinitiative&logoColor=white)
+---
 
 Developer experience engineer at LynxFlow — I write the integration code, the docs
 that explain it, and the workshops where people type it out themselves.
@@ -48,6 +59,16 @@ three exercise stubs that build on each other.
 A reading list I actually maintain — the specs, books, and tools I keep sending
 to people who ask where to start with API design, DX, or technical writing.
 
+**[changelog-template](https://github.com/lxcadoza993/changelog-template)**
+A Keep a Changelog template plus a Python script that reads `git log` and drafts
+a changelog entry from conventional-commit messages. The first pass is mechanical;
+the writing that matters is still yours.
+
+**[sdk-snippets](https://github.com/lxcadoza993/sdk-snippets)**
+The same API call — create an item — written in curl, Python stdlib, and Node
+fetch. No dependencies, no pseudocode. Clone and run. If a snippet stops working,
+that is a bug, same as any other code.
+
 ---
 
 ### Notes on how I work
@@ -59,6 +80,18 @@ to people who ask where to start with API design, DX, or technical writing.
 - Workshop exercises get written backwards, from the thing I want people to be
   able to do at the end.
 - Docs bugs are filed in the same tracker as code bugs, with the same triage.
+
+---
+
+### 📊 Activity
+
+<p align="center">
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=lxcadoza993&show_icons=true&theme=transparent&hide_border=true&count_private=true"/>
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lxcadoza993&layout=compact&theme=transparent&hide_border=true"/>
+</p>
+<p align="center">
+  <img width="720" src="https://github-readme-activity-graph.vercel.app/graph?username=lxcadoza993&theme=github-compact&hide_border=true&radius=8"/>
+</p>
 
 ---
 
