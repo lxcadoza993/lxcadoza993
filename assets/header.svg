@@ -1,69 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="200" viewBox="0 0 880 200" font-family="'Segoe UI',-apple-system,system-ui,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" width="880" height="200">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#161b22"/>
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
     </linearGradient>
-    <linearGradient id="orange" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f59e0b"/><stop offset="1" stop-color="#b45309"/>
-    </linearGradient>
-    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#1e40af"/>
-    </linearGradient>
+    <style>
+      text { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+    </style>
   </defs>
-  <rect width="880" height="200" fill="url(#bg)" rx="14"/>
-  <g stroke="#1f2630" stroke-width="1">
-    <line x1="0" y1="50" x2="880" y2="50"/><line x1="0" y1="100" x2="880" y2="100"/>
-  </g>
-  <!-- flowing code/docs bars -->
+
+  <rect width="880" height="200" fill="url(#bg)"/>
+
+  <!-- guide lines -->
+  <line x1="0" y1="34" x2="880" y2="34" stroke="#21262d" stroke-width="1"/>
+  <line x1="0" y1="166" x2="880" y2="166" stroke="#21262d" stroke-width="1"/>
+  <line x1="440" y1="34" x2="440" y2="166" stroke="#21262d" stroke-width="1" stroke-dasharray="2 6"/>
+
+  <!-- meta labels -->
+  <text x="24" y="23" class="mono" font-size="10" fill="#7d8590" letter-spacing="1">&#x2387; main</text>
+  <text x="24" y="182" class="mono" font-size="10" fill="#7d8590" letter-spacing="1">lyna://lena.devrel</text>
+  <text x="856" y="182" text-anchor="end" class="mono" font-size="10" fill="#7d8590" letter-spacing="1">v1.4.2</text>
+
+  <!-- name -->
+  <text x="24" y="92" font-size="34" font-weight="600" fill="#e6edf3" letter-spacing="0.5">Lena Cardoza</text>
+  <text x="24" y="118" font-size="13" fill="#FF8C42" letter-spacing="3">DEVELOPER RELATIONS @ LYNXFLOW</text>
+  <text x="24" y="142" class="mono" font-size="11" fill="#7d8590" letter-spacing="1">APIs · Workshops · Docs · SDKs · Demos</text>
+
+  <!-- packet flow line -->
+  <line x1="470" y1="150" x2="830" y2="150" stroke="#21262d" stroke-width="1"/>
+  <text x="470" y="140" class="mono" font-size="8" fill="#7d8590">GET /v1/users</text>
+  <circle cx="470" cy="150" r="3" fill="#58a6a6">
+    <animate attributeName="cx" values="470;830" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="830" cy="150" r="3" fill="#FF8C42">
+    <animate attributeName="cx" values="830;470" dur="4s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="4s" begin="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- request card -->
   <g>
-    <rect x="-80" y="14" width="100" height="8" rx="4" fill="#f59e0b" opacity="0.85">
-      <animate attributeName="x" from="-80" to="900" dur="5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.85;0.85;0" keyTimes="0;0.1;0.9;1" dur="5s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="-80" y="28" width="60" height="8" rx="4" fill="#3b82f6" opacity="0.8">
-      <animate attributeName="x" from="-80" to="900" dur="7s" begin="1.2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.8;0.8;0" keyTimes="0;0.1;0.9;1" dur="7s" begin="1.2s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="-80" y="42" width="140" height="8" rx="4" fill="#f59e0b" opacity="0.7">
-      <animate attributeName="x" from="-80" to="900" dur="9s" begin="2.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.1;0.9;1" dur="9s" begin="2.5s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-  <!-- version badge with bounce -->
-  <g>
-    <rect x="730" y="14" width="110" height="26" rx="6" fill="#161b22" stroke="#f59e0b" stroke-width="1.5">
-      <animate attributeName="y" values="14;9;14" dur="2.5s" repeatCount="indefinite"/>
-    </rect>
-    <text x="785" y="31" text-anchor="middle" fill="#f59e0b" font-size="13" font-weight="600">v2.4.0
-      <animate attributeName="y" values="31;26;31" dur="2.5s" repeatCount="indefinite"/>
+    <rect x="470" y="56" width="160" height="54" rx="5" fill="#161b22" stroke="#21262d"/>
+    <circle cx="484" cy="68" r="3" fill="#FF8C42"/>
+    <text x="494" y="72" class="mono" font-size="9" fill="#7d8590">POST /api/events</text>
+    <rect x="482" y="80" width="90" height="4" rx="2" fill="#21262d"/>
+    <rect x="482" y="90" width="120" height="4" rx="2" fill="#21262d"/>
+    <text x="482" y="107" class="mono" font-size="8" fill="#58a6a6" opacity="0">
+      201 Created · 42ms
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="4s" repeatCount="indefinite"/>
     </text>
   </g>
-  <!-- card flip area -->
-  <g transform="translate(660, 110)">
-    <rect width="180" height="70" rx="10" fill="#1c2331" stroke="#3b82f6" stroke-width="1.5"/>
-    <!-- face 1: 200 OK -->
-    <g opacity="1">
-      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.45;0.9;0.95" dur="6s" repeatCount="indefinite"/>
-      <text x="90" y="32" text-anchor="middle" fill="#3b82f6" font-size="15" font-family="monospace" font-weight="600">200 OK</text>
-      <text x="90" y="50" text-anchor="middle" fill="#8b949e" font-size="11">item created</text>
-    </g>
-    <!-- face 2: docs icon -->
-    <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.45;0.5;0.9;0.95" dur="6s" repeatCount="indefinite"/>
-      <rect x="16" y="18" width="22" height="28" rx="3" fill="#e6edf3"/>
-      <line x1="21" y1="25" x2="33" y2="25" stroke="#3b82f6" stroke-width="2"/>
-      <line x1="21" y1="31" x2="33" y2="31" stroke="#3b82f6" stroke-width="2"/>
-      <line x1="21" y1="37" x2="29" y2="37" stroke="#3b82f6" stroke-width="2"/>
-      <text x="48" y="35" fill="#e6edf3" font-size="15" font-weight="600">docs</text>
-      <text x="48" y="51" fill="#8b949e" font-size="11">/api/reference</text>
-    </g>
+
+  <!-- docs endpoint list -->
+  <g>
+    <rect x="650" y="56" width="204" height="54" rx="5" fill="#161b22" stroke="#21262d"/>
+    <text x="664" y="72" class="mono" font-size="8" fill="#7d8590" letter-spacing="1">DOCS / ENDPOINTS</text>
+    <text x="664" y="88" class="mono" font-size="9" fill="#58a6a6" opacity="0">
+      GET    /v1/users
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.3;0.38" dur="6s" repeatCount="indefinite"/>
+    </text>
+    <text x="664" y="88" class="mono" font-size="9" fill="#58a6a6" opacity="0">
+      POST   /v1/webhooks
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.3;0.38" dur="6s" begin="2s" repeatCount="indefinite"/>
+    </text>
+    <text x="664" y="88" class="mono" font-size="9" fill="#58a6a6" opacity="0">
+      PATCH  /v1/keys
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.3;0.38" dur="6s" begin="4s" repeatCount="indefinite"/>
+    </text>
+    <rect x="664" y="96" width="0" height="4" rx="2" fill="#21262d">
+      <animate attributeName="width" values="0;176;176;0" keyTimes="0;0.7;0.95;1" dur="6s" repeatCount="indefinite"/>
+    </rect>
   </g>
-  <!-- name + role + tags -->
-  <text x="40" y="130" fill="#e6edf3" font-size="36" font-weight="700">Lena Cardoza</text>
-  <text x="42" y="160" fill="#f59e0b" font-size="18" font-weight="500">DevRel @ LynxFlow</text>
-  <text x="200" y="160" fill="#8b949e" font-size="15">· docs · workshops · API · DX</text>
+
+  <!-- workshop checklist -->
+  <g>
+    <text x="470" y="132" class="mono" font-size="9" fill="#7d8590">&#x2610; intro to SDK</text>
+    <text x="580" y="132" class="mono" font-size="9" fill="#7d8590">&#x2610; auth flow</text>
+    <text x="680" y="132" class="mono" font-size="9" fill="#7d8590">&#x2610; live demo</text>
+    <text x="470" y="132" class="mono" font-size="9" fill="#FF8C42" opacity="0">&#x2611; intro to SDK
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1;0.15;1" dur="6s" repeatCount="indefinite"/>
+    </text>
+    <text x="580" y="132" class="mono" font-size="9" fill="#FF8C42" opacity="0">&#x2611; auth flow
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.4;0.45;1" dur="6s" repeatCount="indefinite"/>
+    </text>
+    <text x="680" y="132" class="mono" font-size="9" fill="#FF8C42" opacity="0">&#x2611; live demo
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.7;0.75;0.95;1" dur="6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
   <!-- blinking cursor -->
-  <rect x="40" y="168" width="10" height="20" fill="#3b82f6">
-    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+  <rect x="830" y="170" width="7" height="12" fill="#FF8C42">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
   </rect>
 </svg>
