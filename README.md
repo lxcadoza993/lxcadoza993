@@ -86,11 +86,11 @@ that is a bug, same as any other code.
 ### 📊 Activity
 
 <p align="center">
-  <img height="160" src="https://gh-profile-stats.zli39uclan.workers.dev/stats?username=lxcadoza993&hide_border=true"/>
-  <img height="160" src="https://gh-profile-stats.zli39uclan.workers.dev/top-langs?username=lxcadoza993&hide_border=true"/>
+  <img height="160" src="https://gh-profile-stats.zli39uclan.workers.dev/stats?username=lxcadoza993&accent=ff8c42&cell=square&hide_border=true"/>
+  <img height="160" src="https://gh-profile-stats.zli39uclan.workers.dev/top-langs?username=lxcadoza993&accent=ff8c42&cell=square&hide_border=true"/>
 </p>
 <p align="center">
-  <img width="720" src="https://gh-profile-stats.zli39uclan.workers.dev/activity?username=lxcadoza993&hide_border=true"/>
+  <img width="720" src="https://gh-profile-stats.zli39uclan.workers.dev/activity?username=lxcadoza993&accent=ff8c42&cell=square&hide_border=true"/>
 </p>
 
 ---
