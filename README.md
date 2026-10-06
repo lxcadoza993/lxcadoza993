@@ -105,3 +105,10 @@ the only one listed here.
 
 <sub>Opinions here are my own. Code in these repositories is MIT licensed unless a
 repository states otherwise.</sub>
+
+## Rule 0 — read before you preach
+
+My daily briefing: **[t.me/Lx_groups](https://t.me/Lx_groups)** (Chinese, source links on every item).
+Check the archive without Telegram: [t.me/s/Lx_groups](https://t.me/s/Lx_groups).
+Where I send people for depth: [blog.lynxflow.co](https://blog.lynxflow.co) ·
+[the channel's landing page](https://blog.lxlynx.com/tg-channel-landing/).
